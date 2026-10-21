@@ -38,6 +38,19 @@
 }
 
 /*
+ * Newer builds hash those classes, and the header keeps its tint. Spotify
+ * always darkens the top of that tint with 60% black, so the home filter
+ * chips (All, Music, Podcasts, Audiobooks) read best in white, in every
+ * flavor. The header is the first child of main with an inline color; the
+ * selected chip keeps its own colors.
+ */
+main:has(> div > div:first-child[style*="background-color"])
+	[role="checkbox"][aria-checked="false"] {
+	color: #ffffff !important;
+	background-color: rgb(255 255 255 / 0.14) !important;
+}
+
+/*
  * Now Playing panel: when a Canvas video plays behind the header, title and
  * artist, the text must stay light in every flavor, Mint included. Without a
  * video the panel keeps the flavor's own colors.
