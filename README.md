@@ -69,7 +69,7 @@ node scripts/sync-palette.mjs   # download the latest palette.json
 node scripts/build.mjs          # regenerate color.ini
 ```
 
-`Nephrite/user.css` holds the few rules that color variables can't reach. It styles elements rather than Spotify's class names, which change often. Node 18 or newer, no dependencies.
+`Nephrite/user.css` holds the few rules that color variables can't reach: it keeps the home page on the flavor's base color and keeps text light over Canvas videos. It only uses the stable class names Spicetify maps, never Spotify's hashed ones, which change with every update. Node 18 or newer, no dependencies.
 
 ## Contributing
 

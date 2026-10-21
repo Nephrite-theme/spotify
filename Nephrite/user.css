@@ -2,7 +2,8 @@
  * Nephrite for Spotify
  * Colors live in color.ini, which Spicetify turns into --spice-* variables.
  * This file only covers what those variables can't reach, and stays small on
- * purpose: Spotify renames its classes often, so we style elements, not classes.
+ * purpose. It uses the stable class names Spicetify maps (main-*), never
+ * Spotify's own hashed classes, which change with every update.
  */
 
 /* Text selection in the jade accent instead of the browser's blue. */
@@ -19,4 +20,41 @@
 /* Quieter scrollbars that use the palette's surfaces. */
 * {
 	scrollbar-color: var(--spice-tab-active) transparent;
+}
+
+/*
+ * Home: Spotify tints the top of the page with the color of a recent album.
+ * Dark covers turn Mint's header dark and its filter chips unreadable, and
+ * any cover clashes with the palette, so the page keeps the flavor's base.
+ */
+.main-home-homeHeader {
+	background-color: transparent !important;
+	background-image: none !important;
+}
+
+.main-home-filterChipsSection,
+.main-home-filterChipsSection::after {
+	background-color: var(--spice-main) !important;
+}
+
+/*
+ * Now Playing panel: when a Canvas video plays behind the header, title and
+ * artist, the text must stay light in every flavor, Mint included. Without a
+ * video the panel keeps the flavor's own colors.
+ */
+.main-nowPlayingView-content:has(video)
+	:is(
+		.main-nowPlayingView-headerWrapper,
+		.main-nowPlayingView-contextItemInfo,
+		.main-nowPlayingView-canvasVisualEnhancement,
+		.main-nowPlayingView-contextItemVisualEnhancement
+	) {
+	--spice-text: #ffffff;
+	--spice-rgb-text: 255, 255, 255;
+	--spice-subtext: #e6e6e6;
+	--spice-rgb-subtext: 230, 230, 230;
+	--text-base: #ffffff;
+	--text-subdued: #e6e6e6;
+	color: #ffffff;
+	text-shadow: 0 1px 8px rgb(0 0 0 / 0.45);
 }
