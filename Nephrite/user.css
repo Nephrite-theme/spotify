@@ -38,16 +38,12 @@
 }
 
 /*
- * Newer builds hash those classes, and the header keeps its tint. Spotify
- * always darkens the top of that tint with 60% black, so the home filter
- * chips (All, Music, Podcasts, Audiobooks) read best in white, in every
- * flavor. The header is the first child of main with an inline color; the
- * selected chip keeps its own colors.
+ * Newer builds hash those classes, so the same header is found by structure:
+ * the first child of main that carries an inline background color. Its
+ * album tint and 60% black overlay go, and the page keeps the flavor's base.
  */
-main:has(> div > div:first-child[style*="background-color"])
-	[role="checkbox"][aria-checked="false"] {
-	color: #ffffff !important;
-	background-color: rgb(255 255 255 / 0.14) !important;
+main > div > div:first-child[style*="background-color"] {
+	background: none !important;
 }
 
 /*
