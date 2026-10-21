@@ -41,7 +41,32 @@
  * Now Playing panel: when a Canvas video plays behind the header, title and
  * artist, the text must stay light in every flavor, Mint included. Without a
  * video the panel keeps the flavor's own colors.
+ *
+ * Newer Spotify builds hash these class names before Spicetify maps them, so
+ * the rules follow the panel's structure instead:
+ *   aside > div > [panel header]           sits over the top of the video
+ *   aside > div > ... > [canvas block]     holds, in order:
+ *     [video] [title, artist, "switch to video"] [lyrics] [related videos]
+ * The title block is whatever comes between the video and the lyrics.
  */
+aside:has(video) > div > :not(:has(video)),
+aside:has(video) > div > :not(:has(video)) *,
+aside div:has(> div > div > div > div > div > video)
+	> :not(:has(video)):not(:has([data-testid="lyrics-npv-section"])):has(
+		~ :has([data-testid="lyrics-npv-section"])
+	),
+aside div:has(> div > div > div > div > div > video)
+	> :not(:has(video)):not(:has([data-testid="lyrics-npv-section"])):has(
+		~ :has([data-testid="lyrics-npv-section"])
+	)
+	* {
+	--text-base: #ffffff;
+	--text-subdued: #e6e6e6;
+	color: #ffffff !important;
+	text-shadow: 0 1px 8px rgb(0 0 0 / 0.45);
+}
+
+/* The same panel with Spicetify's mapped class names, for builds it maps. */
 .main-nowPlayingView-content:has(video)
 	:is(
 		.main-nowPlayingView-headerWrapper,
@@ -49,10 +74,6 @@
 		.main-nowPlayingView-canvasVisualEnhancement,
 		.main-nowPlayingView-contextItemVisualEnhancement
 	) {
-	--spice-text: #ffffff;
-	--spice-rgb-text: 255, 255, 255;
-	--spice-subtext: #e6e6e6;
-	--spice-rgb-subtext: 230, 230, 230;
 	--text-base: #ffffff;
 	--text-subdued: #e6e6e6;
 	color: #ffffff;
