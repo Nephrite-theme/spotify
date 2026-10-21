@@ -91,6 +91,16 @@ aside div:has(> div > div > div > div > div > video)
 	text-shadow: 0 1px 8px rgb(0 0 0 / 0.45);
 }
 
+/*
+ * The lyrics card is always tinted with the album's color, so its title
+ * ("Lyrics") follows the light text Spotify uses for the lines. Only the
+ * base text color changes: the lines keep their own past and current colors.
+ */
+[data-testid="lyrics-npv-section"],
+[data-testid="lyrics-npv-section"] * {
+	--text-base: #ffffff !important;
+}
+
 /* The same panel with Spicetify's mapped class names, for builds it maps. */
 .main-nowPlayingView-content:has(video)
 	:is(
