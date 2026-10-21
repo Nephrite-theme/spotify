@@ -1,0 +1,12 @@
+{
+  "name": "Nephrite",
+  "description": "A calm, jade-inspired theme for Spotify, in three flavors: Forest, Jade and Mint.",
+  "preview": "assets/preview.webp",
+  "readme": "README.md",
+  "usercss": "Nephrite/user.css",
+  "schemes": "Nephrite/color.ini",
+  "authors": [
+    { "name": "Nephrite", "url": "https://github.com/Nephrite-theme" }
+  ],
+  "tags": ["dark", "light", "green", "minimal"]
+}

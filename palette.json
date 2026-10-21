@@ -1,0 +1,122 @@
+{
+  "name": "Nephrite",
+  "version": "0.1.2",
+  "flavors": {
+    "forest": {
+      "name": "Forest",
+      "dark": true,
+      "colors": {
+        "crust": "#050e09",
+        "mantle": "#09150e",
+        "base": "#0d1c14",
+        "surface0": "#192820",
+        "surface1": "#25342c",
+        "surface2": "#324139",
+        "overlay0": "#59675f",
+        "overlay1": "#76847c",
+        "subtext": "#b4c1ba",
+        "text": "#e0ebe5",
+        "garnet": "#ffa09c",
+        "carnelian": "#fba773",
+        "citrine": "#d9bb5c",
+        "jade": "#4dbf74",
+        "mint": "#5ed7b5",
+        "lagoon": "#43d5dc",
+        "sapphire": "#89c3fe",
+        "amethyst": "#d0aafc",
+        "rhodonite": "#f99dc6"
+      }
+    },
+    "jade": {
+      "name": "Jade",
+      "dark": true,
+      "colors": {
+        "crust": "#0b1d13",
+        "mantle": "#0e2419",
+        "base": "#132e20",
+        "surface0": "#20392c",
+        "surface1": "#2e4639",
+        "surface2": "#3c5346",
+        "overlay0": "#63776c",
+        "overlay1": "#7f9187",
+        "subtext": "#bdccc3",
+        "text": "#e7f2eb",
+        "garnet": "#ffaaa7",
+        "carnelian": "#ffaf7e",
+        "citrine": "#e0c262",
+        "jade": "#4dbf74",
+        "mint": "#65ddbb",
+        "lagoon": "#4cdbe3",
+        "sapphire": "#96c9fe",
+        "amethyst": "#d5b2ff",
+        "rhodonite": "#fea4cc"
+      }
+    },
+    "mint": {
+      "name": "Mint",
+      "dark": false,
+      "colors": {
+        "crust": "#c7ded1",
+        "mantle": "#d7eadf",
+        "base": "#edfbf3",
+        "surface0": "#daeee2",
+        "surface1": "#cbe1d4",
+        "surface2": "#bdd5c7",
+        "overlay0": "#83988c",
+        "overlay1": "#607268",
+        "subtext": "#3f5247",
+        "text": "#192e23",
+        "garnet": "#ad4b4b",
+        "carnelian": "#a85514",
+        "citrine": "#866c02",
+        "jade": "#048149",
+        "mint": "#037e65",
+        "lagoon": "#017b80",
+        "sapphire": "#2672b7",
+        "amethyst": "#8058ab",
+        "rhodonite": "#a54a77"
+      }
+    }
+  },
+  "neutrals": [
+    "crust",
+    "mantle",
+    "base",
+    "surface0",
+    "surface1",
+    "surface2",
+    "overlay0",
+    "overlay1",
+    "subtext",
+    "text"
+  ],
+  "accents": [
+    "garnet",
+    "carnelian",
+    "citrine",
+    "jade",
+    "mint",
+    "lagoon",
+    "sapphire",
+    "amethyst",
+    "rhodonite"
+  ],
+  "ansi": {
+    "black": "surface1",
+    "red": "garnet",
+    "green": "jade",
+    "yellow": "citrine",
+    "blue": "sapphire",
+    "magenta": "amethyst",
+    "cyan": "lagoon",
+    "white": "subtext",
+    "brightBlack": "overlay1",
+    "brightRed": "garnet",
+    "brightGreen": "mint",
+    "brightYellow": "citrine",
+    "brightBlue": "sapphire",
+    "brightMagenta": "rhodonite",
+    "brightCyan": "lagoon",
+    "brightWhite": "text"
+  }
+}

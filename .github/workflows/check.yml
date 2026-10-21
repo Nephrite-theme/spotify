@@ -1,0 +1,15 @@
+# Rebuilds the generated files and checks them against the commit.
+# The steps live in Nephrite-theme/.github, shared by the palette and every port.
+name: Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    uses: Nephrite-theme/.github/.github/workflows/port-check.yml@main
