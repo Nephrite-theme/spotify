@@ -51,6 +51,16 @@ main:has(> div > div:first-child[style*="background-color"])
 }
 
 /*
+ * Carousels fade their scrolled edges with a fixed dark gray (Spotify's own
+ * #121212), which reads as a stray shadow on every flavor and a dark smudge
+ * on Mint. The shelf's data-testid is stable across builds.
+ */
+section[data-testid="component-shelf"] *::before,
+section[data-testid="component-shelf"] *::after {
+	background-image: none !important;
+}
+
+/*
  * Now Playing panel: when a Canvas video plays behind the header, title and
  * artist, the text must stay light in every flavor, Mint included. Without a
  * video the panel keeps the flavor's own colors.
