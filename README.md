@@ -53,17 +53,6 @@ To switch flavors later, run the same commands with another color scheme. To rem
 
 Spotify updates can undo Spicetify's changes. If the theme disappears after an update, run `spicetify backup apply`.
 
-### Windows: blend the window buttons (optional)
-
-On Windows, Spotify draws the minimize, maximize and close buttons on a gray block that themes can't color. To make it transparent so the buttons sit on the flavor's own top bar:
-
-```sh
-spicetify config spotify_launch_flags "--transparent-window-controls"
-spicetify apply
-```
-
-To undo it, run the same commands with an empty value: `spicetify config spotify_launch_flags ""`.
-
 ## Colors
 
 Every color comes from the [Nephrite palette](https://github.com/Nephrite-theme/palette), mapped to Spotify by role:
