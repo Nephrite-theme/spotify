@@ -53,6 +53,17 @@ Para cambiar de sabor más tarde, ejecuta los mismos comandos con otro esquema d
 
 Las actualizaciones de Spotify pueden deshacer los cambios de Spicetify. Si el tema desaparece después de una actualización, ejecuta `spicetify backup apply`.
 
+### Windows: integrar los botones de la ventana (opcional)
+
+En Windows, Spotify dibuja los botones de minimizar, maximizar y cerrar sobre un bloque gris que los temas no pueden colorear. Para hacerlo transparente y que los botones queden sobre la barra superior del sabor:
+
+```sh
+spicetify config spotify_launch_flags "--transparent-window-controls"
+spicetify apply
+```
+
+Para deshacerlo, ejecuta los mismos comandos con un valor vacío: `spicetify config spotify_launch_flags ""`.
+
 ## Colores
 
 Todos los colores vienen de la [paleta Nephrite](https://github.com/Nephrite-theme/palette), asignados a Spotify por rol:
