@@ -101,6 +101,23 @@ aside div:has(> div > div > div > div > div > video)
 	--text-base: #ffffff !important;
 }
 
+/* Its expand and full screen icons, which otherwise take the jade accent. */
+[data-testid="lyrics-npv-section"] button:has(svg) {
+	color: #ffffff !important;
+}
+
+/*
+ * "About the artist": the title sits on the artist's photo. The card is
+ * [photo with title] [name, listeners, follow button], so the title is the
+ * h2 inside the block that a follow button's block comes right after.
+ */
+aside div:has(+ div button) > div > div > h2,
+aside div:has(+ div button) > div > div > h2 * {
+	--text-base: #ffffff;
+	color: #ffffff !important;
+	text-shadow: 0 1px 8px rgb(0 0 0 / 0.45);
+}
+
 /* The same panel with Spicetify's mapped class names, for builds it maps. */
 .main-nowPlayingView-content:has(video)
 	:is(
