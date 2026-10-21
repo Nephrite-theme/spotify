@@ -47,19 +47,11 @@
  *   aside > div > [panel header]           sits over the top of the video
  *   aside > div > ... > [canvas block]     holds, in order:
  *     [video] [title, artist, "switch to video"] [lyrics] [related videos]
- * The title block is whatever comes between the video and the lyrics.
+ * Each rule stays on its own: :has() can't nest, and one invalid selector
+ * would drop every other selector in the same rule.
  */
 aside:has(video) > div > :not(:has(video)),
-aside:has(video) > div > :not(:has(video)) *,
-aside div:has(> div > div > div > div > div > video)
-	> :not(:has(video)):not(:has([data-testid="lyrics-npv-section"])):has(
-		~ :has([data-testid="lyrics-npv-section"])
-	),
-aside div:has(> div > div > div > div > div > video)
-	> :not(:has(video)):not(:has([data-testid="lyrics-npv-section"])):has(
-		~ :has([data-testid="lyrics-npv-section"])
-	)
-	* {
+aside:has(video) > div > :not(:has(video)) * {
 	--text-base: #ffffff;
 	--text-subdued: #e6e6e6;
 	color: #ffffff !important;
