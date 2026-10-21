@@ -58,6 +58,20 @@ aside:has(video) > div > :not(:has(video)) * {
 	text-shadow: 0 1px 8px rgb(0 0 0 / 0.45);
 }
 
+/* Under the video: [switch to video] [title and artist] [lyrics] [queue]. */
+aside div:has(> div > div > div > div > div > video)
+	> :not(:has(video))
+	> :nth-child(-n + 2),
+aside div:has(> div > div > div > div > div > video)
+	> :not(:has(video))
+	> :nth-child(-n + 2)
+	* {
+	--text-base: #ffffff;
+	--text-subdued: #e6e6e6;
+	color: #ffffff !important;
+	text-shadow: 0 1px 8px rgb(0 0 0 / 0.45);
+}
+
 /* The same panel with Spicetify's mapped class names, for builds it maps. */
 .main-nowPlayingView-content:has(video)
 	:is(
