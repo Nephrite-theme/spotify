@@ -21,6 +21,14 @@ A calm, jade-inspired theme for [Spotify](https://www.spotify.com), in three fla
 | **Jade** | <img src="assets/jade.svg" alt="Jade swatches" width="300"> | Dark with more green, for long days |
 | **Mint** | <img src="assets/mint.svg" alt="Mint swatches" width="300"> | Light and airy, for daylight |
 
+## Previews
+
+![Nephrite Forest on the home page](assets/forest-home.webp)
+
+![Nephrite Jade on the home page](assets/jade-home.webp)
+
+![Nephrite Mint on the home page](assets/mint-home.webp)
+
 ## Install
 
 Spotify doesn't support themes on its own, so Nephrite uses [Spicetify](https://spicetify.app), a community tool that customizes the desktop app. [Install Spicetify](https://spicetify.app/docs/getting-started) first.

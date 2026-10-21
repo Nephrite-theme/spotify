@@ -21,6 +21,14 @@ Un tema sereno, inspirado en el jade, para [Spotify](https://www.spotify.com), e
 | **Jade** | <img src="assets/jade.svg" alt="Muestras de Jade" width="300"> | Oscuro con más verde, para jornadas largas |
 | **Mint** | <img src="assets/mint.svg" alt="Muestras de Mint" width="300"> | Claro y ligero, para el día |
 
+## Capturas
+
+![Nephrite Forest en la página de inicio](assets/forest-home.webp)
+
+![Nephrite Jade en la página de inicio](assets/jade-home.webp)
+
+![Nephrite Mint en la página de inicio](assets/mint-home.webp)
+
 ## Instalación
 
 Spotify no admite temas por sí solo, así que Nephrite usa [Spicetify](https://spicetify.app), una herramienta de la comunidad que personaliza la app de escritorio. Primero [instala Spicetify](https://spicetify.app/docs/getting-started).
