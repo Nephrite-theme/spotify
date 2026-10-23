@@ -37,6 +37,13 @@ Spotify doesn't support themes on its own, so Nephrite uses [Spicetify](https://
 
 Open the **Marketplace** tab in Spotify's sidebar, search for **Nephrite** and click **Install**. Then pick a flavor in the theme's color scheme menu.
 
+The Marketplace can only install themes while it is the active theme. If it asks you to set `current_theme` to `marketplace` (for example, after a manual install), run:
+
+```sh
+spicetify config current_theme marketplace
+spicetify apply
+```
+
 ### Manually
 
 1. Download this repository and copy the `Nephrite` folder into your Spicetify themes folder:

@@ -37,6 +37,13 @@ Spotify no admite temas por sí solo, así que Nephrite usa [Spicetify](https://
 
 Abre la pestaña **Marketplace** en la barra lateral de Spotify, busca **Nephrite** y haz clic en **Install**. Luego elige un sabor en el menú de esquemas de color del tema.
 
+El Marketplace solo puede instalar temas cuando él es el tema activo. Si te pide poner `current_theme` en `marketplace` (por ejemplo, después de una instalación a mano), ejecuta:
+
+```sh
+spicetify config current_theme marketplace
+spicetify apply
+```
+
 ### A mano
 
 1. Descarga este repositorio y copia la carpeta `Nephrite` en la carpeta de temas de Spicetify:
