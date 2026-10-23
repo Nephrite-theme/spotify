@@ -6,7 +6,7 @@
   "usercss": "Nephrite/user.css",
   "schemes": "Nephrite/color.ini",
   "authors": [
-    { "name": "Nephrite", "url": "https://github.com/Nephrite-theme" }
+    { "name": "ingfranciscastillo", "url": "https://github.com/ingfranciscastillo" }
   ],
   "tags": ["dark", "light", "green", "minimal"]
 }
